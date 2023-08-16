@@ -1,0 +1,15 @@
+<H1> MOVIES INDEX </H1>
+<div class="container">
+  <ul>
+    <% @movies.each do |movie| %>
+      <p>
+      <%= link_to movie.title, movie_path(movie) %>
+      </p>
+    <% end %>
+  </ul>
+
+</div>
+
+<div>
+<%= link_to 'New Movie', new_movie_path(@movie) %>
+</div>

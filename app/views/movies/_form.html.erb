@@ -1,0 +1,9 @@
+<%= form_with model: @movie do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :overview%>
+  <%= f.text_field :overview%>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to 'back', :back %>
